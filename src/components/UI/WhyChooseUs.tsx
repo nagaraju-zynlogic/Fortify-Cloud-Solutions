@@ -189,7 +189,10 @@ import {
   ChatBubbleIcon,
   StarIcon,
   LightningBoltIcon,
+
 } from "@radix-ui/react-icons";
+import { Cpu } from 'lucide-react'
+import { FiCpu } from "react-icons/fi";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
@@ -316,18 +319,102 @@ const BentoCard = ({
   </div>
 );
 
+// const features = [
+//   {
+//     Icon: PersonIcon,
+//     name: "Deep Domain Expertise",
+//     description: "Focused team with deep domain expertise in Workday, SAP and PeopleSoft.",
+//     href: "/",
+//     cta: "Learn more",
+//     background: (
+//       <div
+//         className="absolute inset-0 bg-cover bg-no-repeat"
+//         style={{
+//           backgroundImage: `url(https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/338075615/original/c84dbd5dd5b3ec45f88162cb2f7ead9dfcfa1404/develop-custom-machine-learning-and-deep-learning-models-for-you.jpg)`,
+//         }}
+//       />
+//     ),
+//     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+//   },
+//   {
+//     Icon: RocketIcon,
+//     name: "Accelerated Deployments",
+//     description: "Accelerated, client-specific deployments tailored to your business needs.",
+//     href: "/",
+//     cta: "Learn more",
+//     background: (
+//       <div
+//         className="absolute inset-0 bg-cover bg-no-repeat"
+//         style={{
+//           backgroundImage: 'website-1.png',
+//         }}
+//       />
+//     ),
+//     className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
+//   },
+//   {
+//     Icon: GlobeIcon,
+//     name: "24/7 Global Support",
+//     description: "24/7 support with global delivery model ensuring continuous service.",
+//     href: "/",
+//     cta: "Learn more",
+//     background: (
+//       <div
+//         className="absolute inset-0 bg-cover bg-no-repeat"
+//         style={{
+//           backgroundImage: `url(https://document360.com/wp-content/uploads/2022/11/How_to_Provide_247_Customer_Service_with_Tips__Benefits-scaled.jpg)`,
+//         }}
+//       />
+//     ),
+//     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+//   },
+//   {
+//     Icon: FiCpu,
+//     name: "Future-Ready Technology",
+//     description: "Cutting-edge tools and platforms to keep you ahead of the competition.",
+//     href: "/",
+//     cta: "Learn more",
+//     background: (
+//       <div
+//         className="absolute inset-0 bg-cover bg-no-repeat"
+//         style={{
+//           backgroundImage: `url(https://media.licdn.com/dms/image/v2/D4D22AQHJ8NL0EyD-Kg/feedshare-shrink_2048_1536/B4DZaACkw7G0Ao-/0/1745904881262?e=2147483647&v=beta&t=pPzsJLocj51N4xaPVUSS0LrkxniPFzUJnxiWLAirHAE)`,
+//         }}
+//       />
+//     ),
+//     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+//   },
+//   {
+//     Icon: StarIcon,
+//     name: "Proven Track Record",
+//     description: "Proven track record of successful Workday transformations with commitment to partnership and continuous innovation.",
+//     href: "/",
+//     cta: "Learn more",
+//     background: (
+//       <div
+//         className="absolute inset-0 bg-cover bg-no-repeat"
+//         style={{
+//           backgroundImage: `url(https://media.licdn.com/dms/image/v2/D4D12AQFeKwhi-fOalQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1694854840393?e=2147483647&v=beta&t=uaF3LRmSHx1pYLqnHLAx5NfHA68KzPLK8vfUcr1BLB4)`,
+//         }}
+//       />
+//     ),
+//     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+//   },
+// ];
+
 const features = [
   {
     Icon: PersonIcon,
     name: "Deep Domain Expertise",
-    description: "Focused team with deep domain expertise in Workday, SAP and PeopleSoft.",
+    description:
+      "Focused team with deep domain expertise in Workday, SAP and PeopleSoft.",
     href: "/",
     cta: "Learn more",
     background: (
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/338075615/original/c84dbd5dd5b3ec45f88162cb2f7ead9dfcfa1404/develop-custom-machine-learning-and-deep-learning-models-for-you.jpg)`,
+          backgroundImage: `url(/Gemini_Generated_Image_wjf8fawjf8fawjf8.png)`, // ✅ from public folder
         }}
       />
     ),
@@ -336,14 +423,15 @@ const features = [
   {
     Icon: RocketIcon,
     name: "Accelerated Deployments",
-    description: "Accelerated, client-specific deployments tailored to your business needs.",
+    description:
+      "Accelerated, client-specific deployments tailored to your business needs.",
     href: "/",
     cta: "Learn more",
     background: (
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(https://static.vecteezy.com/system/resources/previews/010/911/939/non_2x/keyword-research-service-website-ranking-optimization-solution-successful-web-campaign-professional-seo-menu-element-flat-design-modern-illustration-vector.jpg)`,
+          backgroundImage: `url(/Gemini_Generated_Image_cb9e35cb9e35cb9e.png)`, // ✅ from public folder
         }}
       />
     ),
@@ -352,30 +440,32 @@ const features = [
   {
     Icon: GlobeIcon,
     name: "24/7 Global Support",
-    description: "24/7 support with global delivery model ensuring continuous service.",
+    description:
+      "24/7 support with global delivery model ensuring continuous service.",
     href: "/",
     cta: "Learn more",
     background: (
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(https://document360.com/wp-content/uploads/2022/11/How_to_Provide_247_Customer_Service_with_Tips__Benefits-scaled.jpg)`,
+          backgroundImage: `url(/Gemini_Generated_Image_ktsjrlktsjrlktsj.png)`, // ✅ from public folder
         }}
       />
     ),
     className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
   },
   {
-    Icon: ChatBubbleIcon,
-    name: "Flexible Support",
-    description: "Flexible support packages tailored to your specific requirements.",
+    Icon: FiCpu,
+    name: "Future-Ready Technology",
+    description:
+      "Cutting-edge tools and platforms to keep you ahead of the competition.",
     href: "/",
     cta: "Learn more",
     background: (
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(https://media.licdn.com/dms/image/v2/D4D22AQHJ8NL0EyD-Kg/feedshare-shrink_2048_1536/B4DZaACkw7G0Ao-/0/1745904881262?e=2147483647&v=beta&t=pPzsJLocj51N4xaPVUSS0LrkxniPFzUJnxiWLAirHAE)`,
+          backgroundImage: `url(/Gemini_Generated_Image_s2udd6s2udd6s2ud.png)`, // ✅ from public folder
         }}
       />
     ),
@@ -384,20 +474,24 @@ const features = [
   {
     Icon: StarIcon,
     name: "Proven Track Record",
-    description: "Proven track record of successful Workday transformations with commitment to partnership and continuous innovation.",
+    description:
+      "Proven track record of successful Workday transformations with commitment to partnership and continuous innovation.",
     href: "/",
     cta: "Learn more",
     background: (
       <div
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(https://media.licdn.com/dms/image/v2/D4D12AQFeKwhi-fOalQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1694854840393?e=2147483647&v=beta&t=uaF3LRmSHx1pYLqnHLAx5NfHA68KzPLK8vfUcr1BLB4)`,
+          backgroundImage: `url(/Gemini_Generated_Image_tnuq3etnuq3etnuq.png)`, // ✅ from public folder
         }}
       />
     ),
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },
 ];
+
+
+
 
 function WhyChooseUs() {
   return (
