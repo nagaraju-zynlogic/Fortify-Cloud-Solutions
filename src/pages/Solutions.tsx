@@ -975,6 +975,11 @@ import {
   Shield,
   ChevronRight,
   Building2,
+  ShieldCheck,
+  Wallet,
+  PiggyBank,
+  User,
+  
 } from 'lucide-react';
 
 import { motion, AnimatePresence } from 'framer-motion';
@@ -1010,19 +1015,19 @@ const Solutions: React.FC = () => {
   const solutions = [
 
      {
-      icon: UserCheck,
+      icon: Users,
       title: 'Recruitment Management',
       description: 'Our Recruitment Management solution streamlines and enhances your entire talent acquisition process from job requisition to candidate onboarding. It offers customizable recruiter dashboards for managing priority tasks, automated workflows that reduce manual steps, and AI-driven candidate matching to help identify the best-fit talent quickly. Candidates benefit from an intuitive application experience with real-time status updates and interview scheduling, while hiring teams collaborate seamlessly through integrated communication tools. This unified platform provides detailed analytics and reporting for informed decision-making, ensuring a faster, smarter, and more efficient recruitment process that attracts and retains top talent.',
     },
 
     {
-      icon: Users,
-      title: 'Core HCA',
+      icon: User,
+      title: 'Core HCM',
       description: 'Our comprehensive Workday-powered Human Capital Management solution streamlines all aspects of your workforce management—from recruitment and onboarding to payroll and talent development. With an intuitive self-service platform for employees and managers, it simplifies HR operations while ensuring compliance and consistent data across your organization. The solution enables better workforce planning, real-time analytics, and seamless integration across HR, finance, and payroll, empowering you to optimize human capital investments and drive business growth.',
     },
 
     {
-      icon: Heart,
+      icon: ShieldCheck,
       title: 'Benefits',
       description: 'Leveraging Workday’s Benefits Management technology, we provide a centralized and transparent solution that automates benefit eligibility, enrollment, and plan management. Employees enjoy an easy-to-navigate portal for viewing and selecting benefits with full clarity on their total rewards, while HR gains streamlined control over eligibility rules, regulatory compliance, and real-time data synchronization. This integrated approach reduces administrative burdens and enhances employee engagement through clear, accessible benefits communication.',
     },
@@ -1034,13 +1039,13 @@ const Solutions: React.FC = () => {
     },
 
      {
-      icon: Award,
+      icon: DollarSign,
       title: 'Compensation Management',
       description: 'Harnessing Compensation module, we help you design, manage, and execute your compensation programs with precision and transparency. The solution supports configurable pay structures, merit and incentive plans, and budgeting controls, empowering HR and leadership to align compensation with business goals. Employees and managers access unified visibility into compensation data, fostering fairness and motivation while simplifying approval workflows and ensuring compliance.',
     },
 
 {
-      icon: TrendingUp,
+      icon: PiggyBank,
       title: 'Advanced Compensation',
       description: 'Our Advanced Compensation solution powered by Workday provides sophisticated tools for complex variable pay and bonus management, equity plans, and executive compensation. It integrates seamlessly with performance and talent management, enabling you to reward top performers with custom incentive plans. This automation minimizes manual errors, supports regulatory compliance, and delivers detailed reporting and analytics to optimize compensation strategies that drive business success.',
     },
@@ -1064,7 +1069,7 @@ const Solutions: React.FC = () => {
     },
 
         {
-      icon: DollarSign,
+      icon: Wallet,
       title: 'Payroll Management',
       description: 'Our Workday-powered Payroll Management solution simplifies and automates your entire payroll process, ensuring employees are paid accurately and on time, every time. The solution handles complex payroll calculations, tax compliance, earnings, deductions, and benefits integration with a powerful, continuous calculation engine. Employees gain convenient access to their payroll information through mobile and web self-service portals, enhancing transparency and satisfaction. Managers and payroll administrators benefit from real-time dashboards, flexible auditing, and customizable reporting tools for greater control and compliance with regional regulations. Seamless integration with HR, time tracking, and benefits systems reduces manual tasks, minimizes errors, and streamlines payroll operations. By leveraging Workday’s secure and agile payroll platform, we help you save time, improve accuracy, and boost productivity in your payroll processes.',
     },

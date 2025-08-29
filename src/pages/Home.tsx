@@ -89,7 +89,10 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <Hero onCtaClick={() => onPageChange('contact')} />
+      <Hero 
+        onCtaClick={() => onPageChange('contact')}
+        onLearnMoreClick={() => onPageChange('about')}
+      />
 
 
 
@@ -199,9 +202,9 @@ const Home: React.FC<HomeProps> = ({ onPageChange }) => {
       <StepCard/>
 
 
-      <WhyChooseUs/>
+      <WhyChooseUs onPageChange={onPageChange} />
 
-      <WorkTogetherSection/>
+      <WorkTogetherSection onCtaClick={() => onPageChange('contact')}/>
 
       {/* Final CTA Section */}
       {/* <section className="py-20 bg-[#0A234E] text-white">

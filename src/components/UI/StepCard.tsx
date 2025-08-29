@@ -283,9 +283,9 @@ const StepCard: React.FC<StepCardProps> = ({
                 </CardDescription>
                 {index < steps.length - 1 && (
                   <div className="hidden lg:block absolute -right-2 top-1/2 transform -translate-y-1/2 z-10">
-                    <div className="bg-background border border-border rounded-full p-1">
+                    {/* <div className="bg-background border border-border rounded-full p-1">
                       <ChevronRight className="w-4 h-4 text-muted-foreground" />
-                    </div>
+                    </div> */}
                   </div>
                 )}
               </CardContent>

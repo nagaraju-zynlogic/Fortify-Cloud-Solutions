@@ -851,7 +851,8 @@ import {
   Zap,
   BarChart,
   CheckCircle2,
-  X
+  X,
+  Lightbulb
 } from 'lucide-react';
 import { motion, AnimatePresence } from "framer-motion";
 

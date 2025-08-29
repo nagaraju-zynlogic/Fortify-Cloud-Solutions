@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Linkedin, Mail, Phone, MapPin, Twitter } from 'lucide-react';
 
 interface FooterProps {
   onPageChange: (page: string) => void;
@@ -65,14 +65,28 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 text-blue-300 mr-3 flex-shrink-0" />
                 <span className="text-blue-200 text-sm">
-                  123 Business District<br />
-                  Suite 456, City, State 12345
+                  #20, Sri Sai Krupa, 1st main, 4th Phase, <br />
+                  East of Kathriguppe, BSK 3rd Stage, Bangalore-560085
                 </span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-4 w-4 text-blue-300 mr-3 flex-shrink-0" />
-                <span className="text-blue-200 text-sm">+1 (555) 123-4567</span>
+                <div>
+                <span className="text-blue-200 text-sm">+91 73537 60071</span>
+                <br/>
+                <span className="text-blue-200 text-sm">+91 95383 62440</span>
+                <br/>
+                 <span className="text-blue-200 text-sm">+91 63034 64241</span>
+                </div>
               </div>
+              {/* <div className="flex items-center">
+                <Phone className="h-4 w-4 text-blue-300 mr-3 flex-shrink-0" />
+                <span className="text-blue-200 text-sm">+91 95383 62440</span>
+              </div>
+              <div className="flex items-center">
+                <Phone className="h-4 w-4 text-blue-300 mr-3 flex-shrink-0" />
+                <span className="text-blue-200 text-sm">+91 86391 32440</span>
+              </div> */}
               <div className="flex items-center">
                 <Mail className="h-4 w-4 text-blue-300 mr-3 flex-shrink-0" />
                 <span className="text-blue-200 text-sm">info@fortifycloudsolutions.com</span>
@@ -96,6 +110,13 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
               >
                 <Mail className="h-5 w-5" />
               </a>
+
+              <a
+                href="mailto:info@fortifycloudsolutions.com"
+                className="bg-blue-800 p-3 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>
@@ -108,6 +129,9 @@ const Footer: React.FC<FooterProps> = ({ onPageChange }) => {
             </p>
             <p className="text-blue-200 text-sm mt-2 md:mt-0">
               Innovate, Implement, Support
+            </p>
+            <p className='text-blue-200 text-sm'>
+              Developed and Maintained by <span className="text-blue-200">Zynlogic Technolgies</span>
             </p>
           </div>
         </div>

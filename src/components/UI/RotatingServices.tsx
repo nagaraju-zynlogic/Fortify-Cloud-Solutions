@@ -290,7 +290,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { Users, User, TrendingUp, FileText, Calendar, Code } from "lucide-react";
+import { Users, User, TrendingUp, FileText, Calendar, Code, Wallet, ShieldCheck } from "lucide-react";
 import * as React from "react";
 
 // The main component, now named RotatingServices
@@ -311,10 +311,10 @@ function RotatingServices() {
   const servicesData = [
     { id: 1, title: "Recruiting", icon: Users },
     { id: 2, title: "HCM", icon: User },
-    { id: 3, title: "Benefits", icon: TrendingUp },
+    { id: 3, title: "Benefits", icon: ShieldCheck },
     { id: 4, title: "Compensation", icon: FileText },
     { id: 5, title: "Time Off and Absence", icon: Calendar },
-    { id: 6, title: "Payroll", icon: Code },
+    { id: 6, title: "Payroll", icon: Wallet },
   ];
 
   // Effect to handle window resizing for responsiveness
